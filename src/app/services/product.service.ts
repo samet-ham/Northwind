@@ -8,7 +8,6 @@ import { ProductResponseModel } from '../models/productResponseModel';
 })
 export class ProductService {
   apiUrl = 'https://localhost:44314/api/products/getall';
-
   constructor(private httpClient: HttpClient) {}
 
   getProducts(): Observable<ProductResponseModel> {
